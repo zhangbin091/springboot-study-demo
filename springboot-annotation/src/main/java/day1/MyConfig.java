@@ -16,4 +16,13 @@ public class MyConfig {
     public TestBean testBean() {
         return new TestBean("riant");
     }
+    @Bean
+    public Horse horse(){
+        return new Horse("baima");
+    }
+    @Bean
+    public Knight knight(Horse horse){
+        return new Knight("yase",horse);
+    }
+
 }
