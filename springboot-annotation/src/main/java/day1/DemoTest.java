@@ -15,5 +15,8 @@ public class DemoTest {
         ctx.refresh();
         TestBean testBean = ctx.getBean(TestBean.class);
         System.out.println(testBean.getName());
+        Knight knight=ctx.getBean(Knight.class);
+        System.out.println(knight.toString());
+
     }
 }
